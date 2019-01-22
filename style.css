@@ -1,0 +1,30 @@
+h1
+{
+  color:orange;
+}
+
+body
+{
+    margin: 0 auto;
+    max-width: 50em;
+    background-color: rgba(150,180,255);
+}
+
+th
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border:solid;
+}
+table
+{
+    border:solid;
+    border-color: black;
+    border-radius: 15px;
+   background-color: white;
+}
+td
+{
+    
+    border:solid;
+}
