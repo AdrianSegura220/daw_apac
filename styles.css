@@ -1,0 +1,19 @@
+
+body
+{
+    margin: 0 auto;
+    max-width: 60em;
+}
+h1
+{
+    text-align: center;
+    border: solid black;
+    background-color: rgba(163, 255, 250);
+    border-radius: 15px;
+    
+}
+
+header
+{
+    font-weight: bold;
+}
