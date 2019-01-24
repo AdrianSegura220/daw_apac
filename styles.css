@@ -1,6 +1,7 @@
 
 body
 {
+    font-family: Arial;
     margin: 0 auto;
     max-width: 60em;
 }
@@ -8,7 +9,7 @@ h1
 {
     text-align: center;
     border: solid black;
-    background-color: rgba(163, 255, 250);
+    background-color: rgb(134, 202, 212);
     border-radius: 15px;
     
 }
@@ -16,4 +17,27 @@ h1
 header
 {
     font-weight: bold;
+}
+
+#listaCuestionario
+{
+    padding: 30px;
+    border:solid gray;
+    border-radius: 15px;
+    background-color: greenyellow;
+}
+
+p
+{
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 6px;
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+#centrar
+{
+    text-align: center;
 }
