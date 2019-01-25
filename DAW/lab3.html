@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>
+            Laboratorio 1 DAW
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body >
+        
+        <h1 style = "color:rgba(0,0,0); border:5px solid black; background-color:white;"><ins><center><strong>Laboratorio 1 DAW</strong></center></ins></h1><br>
+        <header id = "estilo" >Definiciones iniciales:<br><ol><li>URL(Uniform Resource Locator): Es una manera de encontrar una página en la web. El url se refiere al final a algún archivo ubicado en una máquina de alguna red, siendo esta máquina el servidor de una dirección. Un URL contiene uno o más de los siguientes elementos: Nombre del host, nombre de archivo, número de puerto, referencia etc.</li><li>MIME (MUltipurpose Internet Mail Extentions): Es un estándar que indica el fomato de algún archivo o documento. Por ejemplo texto plano, html, javascript, css, png, mp4, etc.</li><li>Existen una serie de códigos de error, son parte del protocolo HTTP, dichos códigos son usualmente: 404 que significa que no se encontró un elemento y cualquier código 5xx; ya que, estos significan alguna falla del servidor que aloja a la página.</li>XML (eXtensible Markup Language): Fue diseñado para guardar datos y poderlos transportar. Una de las características importantes en el diseño del XML es que fue hecho con el fin de poder ser interpretado por humanos, como también por computadoras.<li>XHTML (EXtensible HyperText Markup Language): Es un lenguaje muy parecido al HTML; sin embargo, es diferente. Fue desarrollado para hacer a HTML más extenso y añadir operabilidad con más formas de datos. La manera de manejar errores para XHTML es mucho más estricta que aquella de HTML.</li><li>HTML5: Es la tecnología más actualizada del estándar HTML. Significa Hypertext Markup Language. En si fue diseñado para poder ser utilizado por cualquier navegador web abierto, como también con el fin de mejorar la semántica de HTML4, conectividad, para almacenar datos de manera local, para mejorar algunas características de multimedia, mejora de rendimiento, entre muchas otras actualizaciones importantes.</li><li>JS (JavaScript): Es un lenguaje de programación ligero interpretado. Se utiliza para programar scripts en las páginas web usualmente. También es utilizado a nivel servidor y en muchas otras aplicaciones.</li><li>PHP (Hypertext Preprocessor): Un lenguaje de propósito general de fuente abierta, que puede ser embedido en HTML, por lo que es de mucha utilidad para el desarrollo web.</li><li>AJAX (Asynchronous JavaScript And XML): Un set de técnicas de desarrollo web que se utiliza para crear apolicacionies asíncronas web. Esto quiere decir que pueden enviar o recibir peticiones de manera asíncrona de un servidor.</li></ol><br></header>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id = "seccionLab2">
+            <center><table id = "tablaLab2">
+                <caption><h2 class = "tituloLab">PREGUNTAS A RESPONDER LAB 1:</h2></caption>
+            
+                <tr><th class="pregunta">PREGUNTA</th><th class = "respuesta">RESPUESTA</th></tr>
+                <!--PREGUNTA 1 -->
+                <tr><td class="pregunta">¿Cuál es la diferencia entre Internet y la World Wide Web?</td><td class = "respuesta"><ul><li>Internet: Se refiere en sí a la red formada por los usuarios de la WWW, es descentralizado, es una red global.</li><li>World Wide Web: Se refiere en sí a la infraesctructura de software contruida sobre el internet.</li></ul></td></tr>
+                <!--PREGUNTA 2-->
+                <tr><td class="pregunta">¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</td><td class = "respuesta"><p>Primero que nada: HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente, pero algunas características similares son compartidas por un grupo de ellos: ej. un request method puede ser safe, idempotent, o cacheable.<a href="#fuente" >[1]</a></p><br><ul><li>GET: Solicita un recurso. Esta petición sólamente recupera datos.</li><li>HEAD: Pide lo mismo que el método GET; sin embargo, no pide el cuerpo de la respuesta.</li><li>POST: Este método se utiliza para enviar a una entidad a un recuros específico.</li><li>PUT: Crea un nuevo elemento o lo reemplaza con los datos de la petición.</li><li>PATCH: Utilizado para aplicar modificaciones parciales a un recurso.</li><li>DELETE: Borra un elemento en específico.</li></ul></td></tr>
+            <!--PREGUNTA 3 -->
+                <tr><td class="pregunta">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</td><td class = "respuesta"><p>Se debería de utilizar el método POST; ya que, este método pide una respuesta en base a datos que se envían desde un navegador.</p></td></tr>
+            <!--PREGUNTA 4 -->
+                <tr><td class="pregunta">¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</td><td class = "respuesta">Se utiliza el método GET; ya que, estamos pidiendo los recursos de la página al servidor que la aloja.</td></tr>
+            <!--PREGUNTA 5 -->
+                <tr><td class="pregunta">Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</td><td class = "respuesta">El código 200 significa que la petición fue correcta.</td></tr>
+            <!--PREGUNTA 6 -->  
+                <tr><td class="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</td><td class = "respuesta">Cuando no es a propósito y el elemento no es accesible por razones imprevistas, entonces sí lo es usualmente.</td></tr>
+            <!--PREGUNTA 7 -->
+            <tr><td class="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</td><td class = "respuesta">Usualmente si lo es, a menos que este problema sea causado de manera externa y tenga que ver directamente con un servidor que no es manejado por el desarrollador físicamente.</td></tr>
+            <!--PREGUNTA 8 -->
+                <tr><td class="pregunta">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</td><td class = "respuesta">Quiere decir que dicho elemento sigue siendo funcional en los navegadores web pero es una tecnología vieja que no debería usarse más; ya que, su versión es anterior y existe algo más nuevo y actualizado.<br>Algunos ejemplos serían:<ul><li>&lt; bold &gt;</li><li>&lt; strike &gt;</li><li>&lt; center &gt;</li><li>Etc...</li></ul></td></tr>
+            <!--PREGUNTA 9 -->
+                <tr><td class="pregunta">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</td><td class = "respuesta">En general HTML5 tiene mejor y más consistente manejo de errores definidos. Por otro lado, HTML5 hace mucho más legible el código gracias a la implementación de nuevos tags y a la depreciación de algunos que son ambiguos o menos útiles por si solos. HTML5 permite tener mucho mejor semántica.</td></tr>
+            <!--PREGUNTA 10 -->
+                <tr><td class="pregunta">¿Qué componentes de estructura y estilo tiene una tabla?</td><td class = "respuesta">Una tabla tiene de manera básica los siguientes componentes de estructura:<br><ul><li>&lt; table &gt;: Este tag define una nueva tabla como tal.</li><li>&lt; caption &gt;: Define un título hasta arriba de las columnas en orden.</li><li>&lt; tr &gt;: Define una nueva fila para la tabla.</li><li>&lt; td &gt;: Define datos de la tabla en dicha fila, se maneja como columna por así decirlo.</li></ul><br>Recordemos que se puede utilizar "style = padding: numPixeles" para definir cuanto espacio habrá entre los bordes de la tabla y el contenido de la misma. Esto es meramente estético. Igualmente existen muchos estilos, pero eso pertenece a CSS más que nada.</td></tr>
+            <!--PREGUNTA 11 -->
+            <tr><td class="pregunta">¿Cuáles son los principales controles de una forma HTML5?</td><td class = "respuesta">Los principales controles en HTML5 son los de input de número, como tabién inputs de texto. Existen otros como input de rangos por medio de una barra deslizable, calendario interactivo, input de color interactivo igualmente, barra de búsqueda, barra desplegable, campos con texto ya definidos, mecanismos de salida como barras de progreso, validación etc.<a href="#controles">[2]</a></td></tr>
+            <!--PREGUNTA 12 -->
+                <tr><td class="pregunta">¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</td><td class = "respuesta">Mi navegador: Chrome Dev 71.0.3578.98 en Windows 10 obtuvo 504 de 555 puntos posibles:<br><br><center><img src="Capture.png" alt="Score de mi navegador" height="98" width="361"></center></td></tr>
+            <!--PREGUNTA 13 -->
+                <tr><td class="preguntaInf">Sobre el ciclo de vida y desarrollo de los sistemas de información:
+¿Cuál es el ciclo de vida de los sistemas de información?
+                    ¿Cuál es el ciclo de desarrollo de sistemas de información?</td><td class = "respuestaInf" >El ciclo de vida de los sistemas de información puede resumirse en las siguientes etapas:<br><ul><li>Inicio</li><li>Desarrollo</li><li>Producción</li><li>Fin de la vida del sistema</li></ul><br>Por otro lado, el ciclo de desarrollo de los sitemas de información principalmente puede resumirse en estas etapas:<br><ol><li>Planificación</li><li>Análisis</li><li>Diseño</li><li>Implementación</li><li>Mantenimiento</li></ol><br></td></tr>
+            </table>
+        </center>
+        </div>
+        
+        
+        <p><center><i><strong>BIBLIOGRAFÍA</strong></i></center></p>
+        <br>
+        <br>
+        <p id="fuente"><a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods">[1] https://developer.mozilla.org/es/docs/Web/HTTP/Methods</a></p>
+        <br>
+        <p id="controles"><a href="https://www.w3.org/community/webed/wiki/Es/Elementos_de_formulario_adicionales_del_HTML5">[2]         https://www.w3.org/community/webed/wiki/Es/Elementos_de_formulario_adicionales_del_HTML5</a></p>
+        <br>
+        <p><a href="https://docs.oracle.com/javase/tutorial/networking/urls/definition.html">https://docs.oracle.com/javase/tutorial/networking/urls/definition.html</a></p>
+        <br>
+        <p><a href="https://docs.oracle.com/javase/tutorial/networking/urls/definition.html">https://docs.oracle.com/javase/tutorial/networking/urls/definition.html</a></p>
+        <br>
+        <p><a href="https://www.w3schools.com/xml/">https://www.w3schools.com/xml/</a></p>
+        <br>
+        <p><a href="https://www.w3schools.com/html/html_xhtml.asp">https://www.w3schools.com/html/html_xhtml.asp</a></p>
+        <br>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5</a></p>
+        <br>
+        <p><a href="https://www.w3schools.com/js/">https://www.w3schools.com/js/</a></p>
+        <br>
+        <p><a href="http://php.net/manual/en/intro-whatis.php">http://php.net/manual/en/intro-whatis.php</a></p>
+        <br>
+        <p><a href="https://www.w3schools.com/xml/ajax_intro.asp">https://www.w3schools.com/xml/ajax_intro.asp</a></p>
+        <br>
+        <p><a href="https://www.w3.org/community/webed/wiki/Es/Elementos_de_formulario_adicionales_del_HTML5">https://www.w3.org/community/webed/wiki/Es/Elementos_de_formulario_adicionales_del_HTML5</a></p>
+        <br>
+        <p></p>
+        <footer><p>Editor utilizado:<a href ="http://brackets.io/"> Brackets</a><br>Adrian Segura Lorente<br>A01209218<br>ISC - Diseño de Aplicaciones Web<br>Correo: A01209218@itesm.mx, adrianseglor@gmail.com</p></footer>
+    </body>
+</html>
+
+
+<!-- BIBLIOGRAFIA: 
+
+
+https://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp
+https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+
+
+
+-->

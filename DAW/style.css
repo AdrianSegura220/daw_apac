@@ -7,7 +7,7 @@ body
 {
     margin: 0 auto;
     max-width: 50em;
-    background-color: rgba(150,180,255);
+    background-color: lightcyan;
 }
 
 th
@@ -15,16 +15,58 @@ th
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border:solid;
+    border-color: black;
 }
-table
+#tablaLab2
 {
     border:solid;
     border-color: black;
     border-radius: 15px;
+    border-width: 5px;
    background-color: white;
+}
+#estilo
+{
+    border:solid;
+    border-color: black;
+    border-radius: 15px;
+    background-color: lightcoral;
+}
+#seccionLab2
+{
+    background-color:lightcoral;
+    border:solid;
+    border-color: lightcoral;
+    border-width: 10px;
 }
 td
 {
-    
+    border-color: black;
     border:solid;
+}
+
+.pregunta
+{
+    background-color: skyblue;
+}
+.respuesta
+{
+    background-color: darkseagreen;
+}
+
+.preguntaInf
+{
+    background-color: skyblue;
+    border-bottom-left-radius: 15px;
+}
+.respuestaInf
+{
+    background-color: darkseagreen;
+    border-bottom-right-radius: 15px;
+}
+
+
+.tituloLab
+{
+    text-decoration: underline;
 }
