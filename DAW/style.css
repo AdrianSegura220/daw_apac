@@ -47,7 +47,6 @@ th
     background-color:crimson;
     border:solid;
     border-color: crimson;
-    border-top-color: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-width: 10px;
@@ -63,6 +62,16 @@ th
     background-color: aquamarine;
     font-family: monospace;
     font-size: 14px;
+}
+#presentacion
+{
+    border-radius: 15px;
+    padding: 15px;
+    background-color: oldlace;
+    border:solid;
+    border-color: sandybrown;
+    margin: 100px;
+    text-align: center;
 }
 td
 {
@@ -80,10 +89,29 @@ td
     background-color: darkseagreen;
     padding:10px;
 }
-
+.preguntaLab3
+{
+    background-color: mediumpurple;
+    padding:10px;
+}
+.respuestaLab3
+{
+    background-color: lightpink;
+    padding:10px;
+}
 .preguntaInf
 {
     background-color: skyblue;
+    border-bottom-left-radius: 15px;
+}
+.respuestaInfLab3
+{
+    background-color: lightpink;
+    border-bottom-right-radius: 15px;
+}
+.preguntaInfLab3
+{
+    background-color: mediumpurple;
     border-bottom-left-radius: 15px;
 }
 .respuestaInf
@@ -91,7 +119,6 @@ td
     background-color: darkseagreen;
     border-bottom-right-radius: 15px;
 }
-
 
 .tituloLab
 {

@@ -60,33 +60,23 @@
             
                 <tr><th class="pregunta">PREGUNTA</th><th class = "respuesta">RESPUESTA</th></tr>
                 <!--PREGUNTA 1 -->
-                <tr><td class="pregunta">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </td><td class = "respuesta"><p>Un "!important" debería ser utilizado en casos muy específicos. Especialmente cuando tenemos algún selector global de CSS y queremos para un elemento en específico de ese selector algo diferente. Otra opción sería cuando se aplica un estilo directamente en el tag de HTML y queremos sobreescribirlo de alguna manera. Recordemos que aplicar estilos directos no es buena práctica.</p></td></tr>
+                <tr><td class="preguntaLab3">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </td><td class = "respuestaLab3"><p>Un "!important" debería ser utilizado en casos muy específicos. Especialmente cuando tenemos algún selector global de CSS y queremos para un elemento en específico de ese selector algo diferente. Otra opción sería cuando se aplica un estilo directamente en el tag de HTML y queremos sobreescribirlo de alguna manera. Recordemos que aplicar estilos directos no es buena práctica.</p></td></tr>
                 <!--PREGUNTA 2-->
-                <tr><td class="pregunta">¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</td><td class = "respuesta"><p>Primero que nada: HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente, pero algunas características similares son compartidas por un grupo de ellos: ej. un request method puede ser safe, idempotent, o cacheable.<a href="#fuente" >[1]</a></p><br><ul><li>GET: Solicita un recurso. Esta petición sólamente recupera datos.</li><li>HEAD: Pide lo mismo que el método GET; sin embargo, no pide el cuerpo de la respuesta.</li><li>POST: Este método se utiliza para enviar a una entidad a un recuros específico.</li><li>PUT: Crea un nuevo elemento o lo reemplaza con los datos de la petición.</li><li>PATCH: Utilizado para aplicar modificaciones parciales a un recurso.</li><li>DELETE: Borra un elemento en específico.</li></ul></td></tr>
+                    <tr><td class="preguntaLab3">Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</td><td class = "respuestaLab3"><p>Debido a que una imagen con tamaño incorrecto se vería deformada y en consecuencia sería poco estético.</p></td></tr>
             <!--PREGUNTA 3 -->
-                <tr><td class="pregunta">¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</td><td class = "respuesta"><p>Se debería de utilizar el método POST; ya que, este método pide una respuesta en base a datos que se envían desde un navegador.</p></td></tr>
+                <tr><td class="preguntaLab3">Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</td><td class = "respuestaLab3">Dependiendo de los dispositivos a los que va orientado un sitio, es buena idea considerar los posibles tipos de pantalla que se van a utilizar, considerando los pixeles por pulgada. Esto se debe a que las medidas pt y px tienen las siguientes características: <ul>
+                    <li>
+                        1 pt = 1/72 de pulgada
+                    </li>
+                    <li>
+                        1 px = 1/96 de pulgada
+                    </li>
+                </ul>
+                </td>
+                </tr>
             <!--PREGUNTA 4 -->
-                <tr><td class="pregunta">¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</td><td class = "respuesta">Se utiliza el método GET; ya que, estamos pidiendo los recursos de la página al servidor que la aloja.</td></tr>
-            <!--PREGUNTA 5 -->
-                <tr><td class="pregunta">Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</td><td class = "respuesta">El código 200 significa que la petición fue correcta.</td></tr>
-            <!--PREGUNTA 6 -->  
-                <tr><td class="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</td><td class = "respuesta">Cuando no es a propósito y el elemento no es accesible por razones imprevistas, entonces sí lo es usualmente.</td></tr>
-            <!--PREGUNTA 7 -->
-            <tr><td class="pregunta">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</td><td class = "respuesta">Usualmente si lo es, a menos que este problema sea causado de manera externa y tenga que ver directamente con un servidor que no es manejado por el desarrollador físicamente.</td></tr>
-            <!--PREGUNTA 8 -->
-                <tr><td class="pregunta">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</td><td class = "respuesta">Quiere decir que dicho elemento sigue siendo funcional en los navegadores web pero es una tecnología vieja que no debería usarse más; ya que, su versión es anterior y existe algo más nuevo y actualizado.<br>Algunos ejemplos serían:<ul><li>&lt; bold &gt;</li><li>&lt; strike &gt;</li><li>&lt; center &gt;</li><li>Etc...</li></ul></td></tr>
-            <!--PREGUNTA 9 -->
-                <tr><td class="pregunta">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</td><td class = "respuesta">En general HTML5 tiene mejor y más consistente manejo de errores definidos. Por otro lado, HTML5 hace mucho más legible el código gracias a la implementación de nuevos tags y a la depreciación de algunos que son ambiguos o menos útiles por si solos. HTML5 permite tener mucho mejor semántica.</td></tr>
-            <!--PREGUNTA 10 -->
-                <tr><td class="pregunta">¿Qué componentes de estructura y estilo tiene una tabla?</td><td class = "respuesta">Una tabla tiene de manera básica los siguientes componentes de estructura:<br><ul><li>&lt; table &gt;: Este tag define una nueva tabla como tal.</li><li>&lt; caption &gt;: Define un título hasta arriba de las columnas en orden.</li><li>&lt; tr &gt;: Define una nueva fila para la tabla.</li><li>&lt; td &gt;: Define datos de la tabla en dicha fila, se maneja como columna por así decirlo.</li></ul><br>Recordemos que se puede utilizar "style = padding: numPixeles" para definir cuanto espacio habrá entre los bordes de la tabla y el contenido de la misma. Esto es meramente estético. Igualmente existen muchos estilos, pero eso pertenece a CSS más que nada.</td></tr>
-            <!--PREGUNTA 11 -->
-            <tr><td class="pregunta">¿Cuáles son los principales controles de una forma HTML5?</td><td class = "respuesta">Los principales controles en HTML5 son los de input de número, como tabién inputs de texto. Existen otros como input de rangos por medio de una barra deslizable, calendario interactivo, input de color interactivo igualmente, barra de búsqueda, barra desplegable, campos con texto ya definidos, mecanismos de salida como barras de progreso, validación etc.<a href="#controles">[2]</a></td></tr>
-            <!--PREGUNTA 12 -->
-                <tr><td class="pregunta">¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</td><td class = "respuesta">Mi navegador: Chrome Dev 71.0.3578.98 en Windows 10 obtuvo 504 de 555 puntos posibles:<br><br><center><img src="Capture.png" alt="Score de mi navegador" height="98" width="361"></center></td></tr>
-            <!--PREGUNTA 13 -->
-                <tr><td class="preguntaInf">Sobre el ciclo de vida y desarrollo de los sistemas de información:
-¿Cuál es el ciclo de vida de los sistemas de información?
-                    ¿Cuál es el ciclo de desarrollo de sistemas de información?</td><td class = "respuestaInf" >El ciclo de vida de los sistemas de información puede resumirse en las siguientes etapas:<br><ul><li>Inicio</li><li>Desarrollo</li><li>Producción</li><li>Fin de la vida del sistema</li></ul><br>Por otro lado, el ciclo de desarrollo de los sitemas de información principalmente puede resumirse en estas etapas:<br><ol><li>Planificación</li><li>Análisis</li><li>Diseño</li><li>Implementación</li><li>Mantenimiento</li></ol><br></td></tr>
+                <tr><td class="preguntaLab3">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</td><td class = "respuestaLab3">Debido a que evita cualquier caracter extra en la página como por ejemplo: Espacios, tabulares, etc. Al final no hace una gran diferencia, pero si ayuda de alguna manera. Esto impacta aún más cuando se habla de CSS más complejos o pesados.</td></tr>
+            
                 </table>
         </section>
         </article>
@@ -120,7 +110,7 @@
         <br>
         </div>
         <p></p>
-        <footer><p>Editor utilizado:<a href ="http://brackets.io/"> Brackets</a><br>Adrian Segura Lorente<br>A01209218<br>ISC - Diseño de Aplicaciones Web<br>Correo: A01209218@itesm.mx, adrianseglor@gmail.com</p></footer>
+        <footer id = "presentacion"><p>Editor utilizado:<a href ="http://brackets.io/"> Brackets</a><br>Adrian Segura Lorente<br>A01209218<br>ISC - Diseño de Aplicaciones Web<br>Correo: A01209218@itesm.mx, adrianseglor@gmail.com</p></footer>
     </body>
 </html>
 
