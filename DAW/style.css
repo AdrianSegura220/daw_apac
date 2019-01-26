@@ -38,7 +38,9 @@ th
     border-color: lightcoral;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    border-width: 10px;
+    border-width: 30px;
+    padding-bottom: 15px;
+    border-bottom-width: 10px;
     margin-bottom: 0px;
 }
 #seccionLab3
@@ -51,6 +53,7 @@ th
     border-bottom-right-radius: 15px;
     border-width: 10px;
     padding-top: 15px;
+    padding-bottom: 15px;
     margin-bottom: 20px;
 }
 #bibliografia
@@ -72,6 +75,14 @@ th
     border-color: sandybrown;
     margin: 100px;
     text-align: center;
+}
+#linkIDE
+{
+    background-color: rosybrown;
+}
+#img
+{
+    border-radius: 15px;
 }
 td
 {
@@ -126,4 +137,15 @@ td
     text-align: center;
     font-size: 45px;
     text-decoration: underline;
+}
+a:link
+{
+    background-color: mediumaquamarine;
+    border-radius: 15px;
+    padding: 1px;
+    color:black;
+}
+a:visited
+{
+    color:black;
 }
