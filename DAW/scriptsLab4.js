@@ -50,8 +50,38 @@ function funcion3(){
             cero++;
         }
     }
-    document.write("Negativos: "+neg+"\n Ceros: "+cero+"\n Mayores a cero: "+mayores);
+    document.write("Negativos: \n"+neg+"\n Ceros: "+cero+"\n Mayores a cero: \n"+mayores+"<br>");
 }
-funcion1();
-funcion2();
-funcion3();
+function funcion4(){
+    let num = prompt("Cuantas listas de numeros deseas?");
+    let res = 0;
+    let longitudes = new Array();
+    let listaInicial= new Array(num);
+    let local = 0;
+    for(let i = 0;i<num;i++){
+        local = prompt("Que longitud de esta lista deseas? ");
+        longitudes[i]=local;
+        listaInicial[i]=new Array(local);
+        for(let j = 0;j<local;j++){
+            listaInicial[i][j]=prompt("Escribe el numero "+(j+1));
+        }
+    }
+    for(let i = 0;i<num;i++){
+        for(let j = 0;j<local;j++){
+           res += parseInt(listaInicial[i][j]); 
+        }
+        document.write("<br> Promedio de lista "+ (i+1) + ":<br> "+(res/longitudes[i]));
+        res = 0;
+    }
+}
+function funcion5(){
+    let str = prompt("Escribe el numero: ");
+    let strFinal = Array(str.length);
+    let ult = str.length-1;
+    for(let i = 0;i<str.length;i++){
+        strFinal[i] = str[ult];
+        ult--;
+    }
+    document.write(strFinal);
+}
+funcion5();
