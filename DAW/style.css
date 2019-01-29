@@ -25,6 +25,9 @@ th
     border-width: 5px;
    background-color: white;
 }
+#tablaJs{
+    align-content: center;
+}
 #estilo
 {
     border-radius: 15px;
@@ -49,6 +52,17 @@ th
     background-color:crimson;
     border:solid;
     border-color: crimson;
+    border-width: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+#seccionLab4
+{
+    
+    background-color:cyan;
+    border:solid;
+    border-color: cyan;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-width: 10px;
