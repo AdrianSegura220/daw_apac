@@ -1,6 +1,5 @@
 function funcion1(){
     document.write("Ejercicio 1:\n");
-    var body = document.getElementsByTagName("body")[0];
     let rows = prompt("Inserta el número: ");
     var numeros = new Array(rows);
     let tabla = '';
@@ -84,4 +83,8 @@ function funcion5(){
     }
     document.write(strFinal);
 }
+funcion1();
+funcion2();
+funcion3();
+funcion4();
 funcion5();
