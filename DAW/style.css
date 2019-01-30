@@ -104,6 +104,29 @@ th
 {
     border-radius: 15px;
 }
+#pantallaCalc
+{
+    margin: 0 auto;
+    border:solid black;
+    height: 100px;
+    width: 380px;
+    background-color:ghostwhite;
+    
+}
+#calculadora
+{
+    margin: 0 auto;
+    padding: 40px;
+    height: 500px;
+    width: 400px;
+    border:solid black;
+    background-color: mediumpurple;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+
 td
 {
     border-color: black;

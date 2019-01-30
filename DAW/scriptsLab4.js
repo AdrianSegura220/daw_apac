@@ -84,4 +84,9 @@ function funcion5(){
     }
     document.write(strFinal);
 }
+
+var calculadora = new Oject();
+calculadora.listaNumeros = new Array();
+calculadora.listaOperaciones = new Array();
+
 funcion5();
