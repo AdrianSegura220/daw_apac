@@ -1,6 +1,5 @@
 function funcion1(){
     document.write("Ejercicio 1:\n");
-    var body = document.getElementsByTagName("body")[0];
     let rows = prompt("Inserta el número: ");
     var numeros = new Array(rows);
     let tabla = '';
@@ -84,9 +83,11 @@ function funcion5(){
     }
     document.write(strFinal);
 }
+<<<<<<< HEAD
 
 var calculadora = new Oject();
 calculadora.listaNumeros = new Array();
 calculadora.listaOperaciones = new Array();
 
 funcion5();
+
