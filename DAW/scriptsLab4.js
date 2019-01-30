@@ -1,5 +1,15 @@
+var calculadora = new Oject();
+calculadora.listaNumeros = new Array();
+calculadora.listaOperaciones = new Array();
+var contNum = 0;
+var contOp = 0;
+var suma = "+";
+var resta = "-";
+var multiplicacion = "x";
+var division = "/";
 function funcion1(){
     document.write("Ejercicio 1:\n");
+    var body = document.getElementsByTagName("body")[0];
     let rows = prompt("Inserta el número: ");
     var numeros = new Array(rows);
     let tabla = '';
@@ -83,11 +93,23 @@ function funcion5(){
     }
     document.write(strFinal);
 }
-<<<<<<< HEAD
-
-var calculadora = new Oject();
-calculadora.listaNumeros = new Array();
-calculadora.listaOperaciones = new Array();
+function imprimirChar(){
+    
+}
+function agregarAFila(var char){
+    if(typeof char == "string"){
+        if(char == "+"){
+            calculadora.listaOperaciones[contNum] = char;
+        }else if(char == "-"){
+            
+        }else if(char == "x"){
+                 
+        }else if(char == "/"){
+            
+        }
+    }
+    
+    
+}
 
 funcion5();
-
