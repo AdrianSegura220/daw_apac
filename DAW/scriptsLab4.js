@@ -1,6 +1,7 @@
 var calculadora = new Oject();
 calculadora.listaNumeros = new Array();
 calculadora.listaOperaciones = new Array();
+calculadora.iniciado = false;
 var contNum = 0;
 var contOp = 0;
 var suma = "+";
@@ -111,5 +112,19 @@ function agregarAFila(var char){
     
     
 }
-
+function suma(var num1, var num2){
+    return num1+num2;
+}
+function multiplicacion(var num1, var num2){
+    return num1*num2;
+}
+function division(var num1, var num2){
+    return num1/num2;
+}
+function resta(var num1, var num2){
+    return num1-num2;
+}
+function clear(){
+    calculadora.iniciado = false;
+}
 funcion5();
