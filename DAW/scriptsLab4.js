@@ -1,13 +1,11 @@
-var calculadora = new Oject();
-calculadora.listaNumeros = new Array();
-calculadora.listaOperaciones = new Array();
-calculadora.iniciado = false;
-var contNum = 0;
+
+var calculadora = new Object();
+calculadora.listToProccess = new Array();
+calculadora.prevNum = false;
+calculadora.acumulado = 0;
+var prev = "";
 var contOp = 0;
-var suma = "+";
-var resta = "-";
-var multiplicacion = "x";
-var division = "/";
+
 function funcion1(){
     document.write("Ejercicio 1:\n");
     var body = document.getElementsByTagName("body")[0];
@@ -94,37 +92,95 @@ function funcion5(){
     }
     document.write(strFinal);
 }
-function imprimirChar(){
-    
-}
-function agregarAFila(var char){
+function agregarAFila(char){
+    console.log("entro");
     if(typeof char == "string"){
-        if(char == "+"){
-            calculadora.listaOperaciones[contNum] = char;
-        }else if(char == "-"){
-            
-        }else if(char == "x"){
-                 
-        }else if(char == "/"){
-            
+        if(calculadora.prevNum == true){
+           calculadora.listToProccess[contOp] = parseInt(cadenaNum);
+            contOp++;
         }
+        if(char == "+"){
+            calculadora.listToProccess[contOp] = "+";
+        }else if(char == "-"){
+            calculadora.listToProccess[contOp] = "-";
+        }else if(char == "x"){
+            calculadora.listToProccess[contOp] = "x";
+        }else if(char == "/"){
+            calculadora.listToProccess[contOp] = "/";
+        }
+        calculadora.prevNum = false;
+        prev = "";
+        contOp ++;
+    }else if(typeof char == "number"){
+        cadenaNum = prev+char;
+        prev = char;
+        calculadora.prevNum = true;
     }
     
-    
+    console.log(calculadora.listToProccess);
+    imprimir();
 }
-function suma(var num1, var num2){
+function suma( num1, num2){
     return num1+num2;
 }
-function multiplicacion(var num1, var num2){
+function multiplicacion(num1, num2){
     return num1*num2;
 }
-function division(var num1, var num2){
+function division(num1, num2){
     return num1/num2;
 }
-function resta(var num1, var num2){
+function resta(num1, num2){
     return num1-num2;
 }
 function clear(){
-    calculadora.iniciado = false;
+    
 }
-funcion5();
+function result(){
+    if(calculadora.listToProccess.length != 0){
+        if(calculadora.prevNum == true){
+            calculadora.listToProccess[contOp] = parseInt(cadenaNum);
+            contOp++;
+            calculadora.prevNum = false;
+        }
+        calculadora.acumulado = calculadora.listToProccess[0];
+        for(i = 0;i<calculadora.listToProccess.length;i++){
+            console.log(typeof calculadora.listToProccess[i]);
+            if(typeof calculadora.listToProccess[i] == "number"){
+            //toma el siguiente numero e interpreta el operador para hacer la operacion correspondiente
+                if(typeof calculadora.listToProccess[i+1] == "string" && typeof calculadora.listToProccess[i+2] == "number"){
+                    calculadora.acumulado = interpretaOperador(calculadora.acumulado,calculadora.listToProccess[i+2],calculadora.listToProccess[i+1]);
+                    calculadora.listToProccess[i+2] = calculadora.acumulado;
+                    i++;
+                    
+                }else{
+                    
+                }
+            }
+        }
+        console.log(calculadora.acumulado);
+    }  
+}
+function interpretaOperador(num1, num2, operador){
+        var final = 0;
+        if(operador == "+"){
+            final = suma(num1, num2);
+        }else if(operador == "-"){
+            final = resta(num1, num2);
+        }else if(operador == "x"){
+            final = multiplicacion(num1,num2);
+        }else if(operador == "/"){
+            final = division(num1,num2);
+        }
+    return final;
+}
+var aImprimir = new Array();
+function imprimir(){
+    
+    
+    var pantalla = document.getElementById("pantallaCalc");
+    pantalla.innerHTML=aImprimir;
+}
+
+
+
+

@@ -116,11 +116,11 @@
                 <div id="pantallaCalc">
                     
                 </div>
-                <table>
-                    <tr><td><button id="1"></button></td><td><button id="2"></button></td><td><button id="3"></button></td><td><button id="+"></button></td></tr>
-                    <tr><td><button id="4"></button></td><td><button id="5"></button></td><td><button id="6"></button></td><td><button id="-"></button></td></tr>
-                    <tr><td><button id="7"></button></td><td><button id="8"></button></td><td><button id="9"></button></td><td><button id="x"></button></td></tr>
-                    <tr><td><button id="0"></button></td><td><button id="/"></button></td></tr>
+                <table id = "botonesCalc">
+                    <tr id="tr1"><td><button id="1" onclick="agregarAFila(1)">1</button></td><td id = "2"><button id="2" onclick="agregarAFila(2)">2</button></td><td><button id="3" onclick="agregarAFila(3)">3</button></td><td><button id="+" onclick="agregarAFila('+')">+</button></td></tr>
+                    <tr><td><button id="4" onclick="agregarAFila(4)">4</button></td><td><button id="5" onclick="agregarAFila(5)">5</button></td><td><button id="6" onclick="agregarAFila(6)">6</button></td><td><button id="-" onclick="agregarAFila('-')">-</button></td></tr>
+                    <tr><td><button id="7" onclick="agregarAFila(7)">7</button></td><td><button id="8" onclick="agregarAFila(8)">8</button></td><td><button id="9" onclick="agregarAFila(9)">9</button></td><td><button id="x" onclick="agregarAFila('x')">x</button></td></tr>
+                    <tr><td><button id="0" onclick="agregarAFila(0)">0</button></td><td><button id="/" onclick="agregarAFila('/')">/</button></td><td><button id="=" onclick="result()">=</button></td><td><button id="c" onclick="clear()">C</button></td></tr>
                 </table>
             </div>
         </article>
