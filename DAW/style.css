@@ -111,7 +111,7 @@ th
     height: 100px;
     width: 380px;
     background-color:ghostwhite;
-    
+    margin-bottom: 20px;
 }
 #calculadora
 {
@@ -132,6 +132,14 @@ th
 #tr1
 {
     
+}
+button
+{
+    margin: 0 auto;
+    width:87px;
+    height: 87px;
+    font-size: 35px;
+    font-weight: bolder;
 }
 td
 {
@@ -157,6 +165,16 @@ td
 .respuestaLab3
 {
     background-color: lightpink;
+    padding:10px;
+}
+.preguntaLab4
+{
+    background-color: darkorange;
+    padding:10px;
+}
+.respuestaLab4
+{
+    background-color: yellowgreen;
     padding:10px;
 }
 .preguntaInf

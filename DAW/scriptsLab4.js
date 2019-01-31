@@ -3,8 +3,11 @@ var calculadora = new Object();
 calculadora.listToProccess = new Array();
 calculadora.prevNum = false;
 calculadora.acumulado = 0;
-var prev = "";
+var prev = " ";
 var contOp = 0;
+var aImprimir = new Array();
+var contadorPantalla = 0;
+var finalImpresion = "";
 
 function funcion1(){
     document.write("Ejercicio 1:\n");
@@ -93,6 +96,7 @@ function funcion5(){
     document.write(strFinal);
 }
 function agregarAFila(char){
+    imprimir(char);
     console.log("entro");
     if(typeof char == "string"){
         if(calculadora.prevNum == true){
@@ -113,7 +117,7 @@ function agregarAFila(char){
         contOp ++;
     }else if(typeof char == "number"){
         cadenaNum = prev+char;
-        prev = char;
+        prev = cadenaNum;
         calculadora.prevNum = true;
     }
     
@@ -173,12 +177,29 @@ function interpretaOperador(num1, num2, operador){
         }
     return final;
 }
-var aImprimir = new Array();
-function imprimir(){
-    
+
+function imprimir(valor){
+    switch(valor){
+        case "=":
+            finalImpresion = calculadora.acumulado;
+        break;
+        case "c":
+            contadorPantalla = 0;
+            finalImpresion = "";
+            aImprimir = [];
+        break;
+        default:
+            /*aImprimir[contadorPantalla] = valor;
+            contadorPantalla++;
+            for(i =0;i<aImprimir.length;i++){
+            finalImpresion += aImprimir[i];
+            }*/
+            finalImpresion +=valor;
+        break;
+    }
     
     var pantalla = document.getElementById("pantallaCalc");
-    pantalla.innerHTML=aImprimir;
+    pantalla.innerHTML=finalImpresion;
 }
 
 
