@@ -29,6 +29,7 @@ function funcion1(){
         tabla += '</tr>';
     }
     document.write('<table border = 1>'+tabla+'</table>'+'<br>');
+    espaciar();
     
 }
 function funcion2(){
@@ -42,6 +43,7 @@ function funcion2(){
        }else{
            alert("Incorrecto, tardaste "+((t2-t1)/1000)+" segundos.");
        }
+    espaciar();
 }
 function funcion3(){
     let arr= new Array();
@@ -62,6 +64,7 @@ function funcion3(){
         }
     }
     document.write("Negativos: \n"+neg+"\n Ceros: "+cero+"\n Mayores a cero: \n"+mayores+"<br>");
+    espaciar();
 }
 function funcion4(){
     let num = prompt("Cuantas listas de numeros deseas?");
@@ -84,9 +87,15 @@ function funcion4(){
         document.write("<br> Promedio de lista "+ (i+1) + ":<br> "+(res/longitudes[i]));
         res = 0;
     }
+    espaciar();
+}
+function espaciar(){
+    for(i = 0;i<4;i++){
+        document.write("<br>");
+    }
 }
 function funcion5(){
-    let str = prompt("Escribe el numero: ");
+    let str = prompt("Escribe el numero que deseas INVERTIR: ");
     let strFinal = Array(str.length);
     let ult = str.length-1;
     for(let i = 0;i<str.length;i++){
@@ -202,6 +211,12 @@ function imprimir(valor){
     pantalla.innerHTML=finalImpresion;
 }
 
-
+function correr(){
+    funcion1();
+    funcion2();
+    funcion3();
+    funcion4();
+    funcion5();
+}
 
 

@@ -141,6 +141,36 @@ button
     font-size: 35px;
     font-weight: bolder;
 }
+#funcionesLab4
+{
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 10 auto;
+    background-color: white;
+    border-radius: 15px;
+}
+#tituloCalc
+{
+    text-align: center;
+    font-family: impact;
+    font-size: 50px;
+    color: black;
+}
+#marco
+{
+    border: solid black;
+    border-radius: 15px;
+    border-width: 5px;
+    margin-bottom: 100px;
+}
+#correr
+{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    width: 180px;
+}
 td
 {
     border-color: black;

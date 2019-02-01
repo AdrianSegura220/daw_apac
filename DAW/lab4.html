@@ -98,28 +98,38 @@
                         pop(): Saca el último elemento del arreglo.
                     </li>
                     <li>
-                    
+                        push(): Introduce un elemento al final del arreglo.
                     </li>
                     
                     <li>
-                    
+                        sort(): Ordena el arreglo de menor a mayor por default. También puede ordenarlo según se indique.
                     </li>
                     </ul>
                 </td>
                 </tr>
             <!--PREGUNTA 4 -->
-                <tr><td class="preguntaLab4">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</td><td class = "respuestaLab4">Debido a que evita cualquier caracter extra en la página como por ejemplo: Espacios, tabulares, etc. Al final no hace una gran diferencia, pero si ayuda de alguna manera. Esto impacta aún más cuando se habla de CSS más complejos o pesados.</td></tr>
-            
+                <tr><td class="preguntaLab4">¿Cómo se declara una variable con alcance local dentro de una función?</td><td class = "respuestaLab4">Se declara utilizando la palabra reservada "let", seguido por el nombre de la variable.</td></tr>
+                <tr><td class="preguntaLab4">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</td><td class = "respuestaLab4">Implica que cualquiera de las funciones puede verlas y modificarlas. El problema es que por la manera en la que javascript maneja los tipos de dato, pueden haber muchos comportamientos extraños si no se tiene cuidado.</td></tr>
+                    
+                <tr><td class="preguntaLab4">¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</td><td class = "respuestaLab4">Podríamos utilizar las expresiones regulares por ejemplo para autocorrectores, búsqueda de ciertas palabras específicas o de ciertos caracteres para validar formas. Ejemplos de métodos que sirven para esto serían: exec, test, RegExp, match, replace, search y split.</td></tr>
                 </table>
             <br>
             <br>
+            
             <div id = "funcionesLab4">
-                
+                <p>Los ejercicios realizados como parte de este laboratorio pueden correrse presionando el botón que dice "correr". Dichos ejercicios corren uno tras otro.<br>La calculadora no funciona al 100%, su manera de funcionar es la siguiente:<br>El resultado de las operaciones se puede visualizar en la consola. Para borrar se requiere de recargar la página. Solo se pueden hacer operaciones en una línea, es decir que se ponen todas las operaciones deseadas de una vez. Las operaciones no son interpretadas de forma jerárquica. La poca funcionalidad se debe al poco tiempo y al bajo conocimiento del lenguaje :( .</p> 
+                <br>
+                <center><button id = "correr" onclick="correr()">CORRER</button></center>
             </div>
         </section>
             
             <br>
-            <div id="calculadora">
+            
+            <div id="marco">
+                <h1 id = "tituloCalc">CALCULADORA (ejercicio 6):</h1>
+                <br>
+                <center><p>Recuerda ver resultado en consola :)</p></center>
+                <div id="calculadora">
                 <div id="pantallaCalc">
                     
                 </div>
@@ -129,10 +139,12 @@
                     <tr><td><button id="7" onclick="agregarAFila(7)">7</button></td><td><button id="8" onclick="agregarAFila(8)">8</button></td><td><button id="9" onclick="agregarAFila(9)">9</button></td><td><button id="x" onclick="agregarAFila('x')">x</button></td></tr>
                     <tr><td><button id="0" onclick="agregarAFila(0)">0</button></td><td><button id="/" onclick="agregarAFila('/')">/</button></td><td><button id="=" onclick="result()">=</button></td><td><button id="c" onclick="clear()">C</button></td></tr>
                 </table>
+                </div>
             </div>
+            
         </article>
           
-       
+        
         <div id = "bibliografia">
         <p>BIBLIOGRAFÍA</p>
         <br>
@@ -164,6 +176,24 @@
         <p><a href="https://www.w3.org/Style/Examples/007/units.en.html">https://www.w3.org/Style/Examples/007/units.en.html</a></p>
         <br>
         <p><a href="http://w3schools.invisionzone.com/topic/41387-css-important/">http://w3schools.invisionzone.com/topic/41387-css-important/</a></p>
+            <br>
+        <p><a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions</a></p>
+            <br>
+        <p><a href=https://www.w3schools.com/js/js_array_methods.asp>https://www.w3schools.com/js/js_array_methods.asp</a></p>
+            <br>
+        <p><a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</a></p>
+            <br>
+        <p><a href=https://www.w3schools.com/js/js_date_methods.asp>https://www.w3schools.com/js/js_date_methods.asp</a></p>
+            <br>
+        <p><a href=https://stackoverflow.com/questions/4514602/type-checking-in-javascript>https://stackoverflow.com/questions/4514602/type-checking-in-javascript</a></p>
+            <br>
+        <p><a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures</a></p>
+             <br>
+        <p><a href=https://www.w3schools.com/jsref/event_onclick.asp>https://www.w3schools.com/jsref/event_onclick.asp</a></p>
+             <br>
+        <p><a href=https://www.w3schools.com/js/js_events.asp>https://www.w3schools.com/js/js_events.asp</a></p>
+             <br>
+        <p><a href=https://www.w3schools.com/jS/js_objects.asp>https://www.w3schools.com/jS/js_objects.asp</a></p>
         </div>
         <p></p>
         <footer id = "presentacion"><p>Editor utilizado:<a href ="http://brackets.io/" id="linkIDE"> Brackets </a><a href ="http://brackets.io/" id="linkIDEE"><img src="brackets.png" height = 15px; width=15px; ></a><br>Adrian Segura Lorente<br>A01209218<br>ISC - Desarrollo de Aplicaciones Web<br>Correo: A01209218@itesm.mx, adrianseglor@gmail.com</p></footer>
