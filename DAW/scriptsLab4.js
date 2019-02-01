@@ -9,6 +9,7 @@ var aImprimir = new Array();
 var contadorPantalla = 0;
 var finalImpresion = "";
 
+document.getElementById("accion").oninput = escribeEnTiempoReal;
 function funcion1(){
     document.write("Ejercicio 1:\n");
     var body = document.getElementsByTagName("body")[0];
@@ -186,7 +187,9 @@ function interpretaOperador(num1, num2, operador){
         }
     return final;
 }
-
+function escribeEnTiempoReal(){
+    document.getElementById("tiempoReal").innerHTML = '<p>'+ document.getElementById("accion").value + '</p>';
+}
 function imprimir(valor){
     switch(valor){
         case "=":
