@@ -9,6 +9,8 @@ consecutivo = false;
 noArgs = false;
 specialChar = false;
 mayus = false;
+charE = false;
+mayuS = false;
 function verificar(){
     let arguments = new Array();
     pass = document.getElementById("contra").value;
@@ -23,17 +25,14 @@ function verificar(){
     }else{
         corta = false;
     }
-    comment(arguments);
     if(coincide && !corta){
         noArgs = true;
     }else{
         noArgs = false;
     }
-    for(i = 0;i<pass.length;i++){
-        if((pass.charCodeAt(i) >= 33 && pass.charCodeAt(i) <= 47) || (pass.charCodeAt(i) >= 59 && pass.charCodeAt(i) <= 64) || (pass.charCodeAt(i) >= 91 && pass.charCodeAt(i) <= 96)){
-            specialChar = true;
-        }
-    }
+    
+    
+    comment(arguments);
     if(noArgs){
         verificacionFinal();
     }
@@ -43,6 +42,28 @@ function verificacionFinal(){
     
 }
 function comment(args){
+    for(i = 0;i<pass.length;i++){
+        if((pass.charCodeAt(i)>=33 && pass.charCodeAt(i) <= 47) ||(pass.charCodeAt(i)>=58 && pass.charCodeAt(i) <= 64) || (pass.charCodeAt(i) >=91 && pass.charCodeAt(i) <= 96)){
+            specialChar = true;
+            break;
+        }
+        
+    }
+    for(i = 0;i<pass.length;i++){
+        if(pass.charCodeAt(i) >= 65 && pass.charCodeAt(i) <= 90){
+            mayus = true;
+            break;
+        }
+        
+    }
+    if(!mayus){
+        args.push("hace falta mayuscula");
+    }
+    if(!specialChar){
+        args.push("hace falta caracter especial");
+    }
+    mayus = false;
+    specialChar = false;
     let toPrint = new Array();
     for(i = 0;i<args.length;i++){
         if(i == args.length-1){
