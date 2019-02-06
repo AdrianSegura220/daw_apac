@@ -5,14 +5,48 @@ header
     font-family: impact;
     text-align: center;
 }
-
+.roundedBorderCard
+{
+    border-radius: 15px;
+    border: solid;
+}
+.sellingCard
+{
+     margin: 0 auto;
+    vertical-align: middle;
+  width: 50%;
+  padding: 10px;
+    height: 400px;
+    width: 400px;
+    border:solid;
+    background-color: azure;
+    font-family: impact;
+    font-size: 15px;
+    border-radius: 15px;
+}
+.fotografiaTienda
+{
+    height: 300px;
+    width: 400px;
+    
+}
+#campoDeTienda
+{
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    
+}
 #campoDeDatos
 {
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
     padding: 10px;
     font-family: arial;
     font-size: 20px;
-    margin: 100 auto;
     text-align: center;
+    background-color: darkseagreen;
 }
 #aqui
 {

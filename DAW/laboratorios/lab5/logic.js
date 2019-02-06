@@ -35,9 +35,11 @@ function verificar(){
     }
     
     if(noArgs){
-        document.getElementById("campoDeDatos").style.backgroundColor = "green";
+        document.getElementById("contra").style.backgroundColor = "green";
+        document.getElementById("contra2").style.backgroundColor = "green";
     }else{
-        document.getElementById("campoDeDatos").style.backgroundColor = "white";
+        document.getElementById("contra").style.backgroundColor = "white";
+        document.getElementById("contra2").style.backgroundColor = "white";
     }
     comment(arguments);
     
