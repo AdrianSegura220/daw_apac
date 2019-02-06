@@ -10,25 +10,61 @@ header
     border-radius: 15px;
     border: solid;
 }
+.boton
+{
+    margin: 10px;
+}
+.stock
+{
+    font-family: arial;
+    font-size: 12px;
+    margin: 10px;;
+    
+}
 .sellingCard
 {
-     margin: 0 auto;
+     margin: 100 auto;
     vertical-align: middle;
   width: 50%;
   padding: 10px;
     height: 400px;
     width: 400px;
     border:solid;
-    background-color: azure;
+    background-color: white;
     font-family: impact;
     font-size: 15px;
     border-radius: 15px;
+    margin-bottom: 100px;
+    padding: 50px;
 }
 .fotografiaTienda
 {
     height: 300px;
     width: 400px;
     
+}
+#contra
+{
+    border-radius: 10px;
+}
+#contra2
+{
+    border-radius: 10px;
+}
+#aqui
+{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    max-height: 100px;
+    max-width: 300px;
+    padding: 10px;
+}
+.divisionOpciones
+{
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 15px;
 }
 #campoDeTienda
 {
@@ -44,16 +80,12 @@ header
     height: 200px;
     padding: 10px;
     font-family: arial;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
-    background-color: darkseagreen;
+    background-color: white;
+    border: solid black;
 }
-#aqui
-{
-    text-align: center;
-    font-family: impact;
-    color: red;
-}
+
 #contra
 {
     width: 500px;

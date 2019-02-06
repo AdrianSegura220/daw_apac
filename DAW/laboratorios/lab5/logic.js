@@ -11,6 +11,8 @@ specialChar = false;
 mayus = false;
 charE = false;
 mayuS = false;
+cantidadInicialS = 999;
+cantidadInicialM = 999;
 function verificar(){
     let arguments = new Array();
     pass = document.getElementById("contra").value;
@@ -83,8 +85,40 @@ function comment(args){
     document.getElementById("aqui").innerHTML = "";
     for(i = 0;i<args.length;i++){
          document.getElementById("aqui").innerHTML += toPrint[i];
+        document.getElementById("aqui").style.backgroundColor = "rgba(226, 176, 19, 1)";
     }
     
    
    
+}
+function comprar(articulo){
+    switch(articulo){
+        case "samsung":
+            let num = document.getElementById("numSamsung").value;
+            if((cantidadInicialS - num)<0){
+                
+            }else{
+                cantidadInicialS -= num;
+                console.log(cantidadInicialS);
+            }
+        break;
+            
+        case "macbook":
+            let num2 = document.getElementById("numMacbook").value;
+            if((cantidadInicialM - num2)<0){
+                
+            }else{
+                cantidadInicialM -= num2;
+                console.log(cantidadInicialM);
+            }
+        break;
+    }
+}
+document.getElementById("botonSamsung").onclick = samsung;
+document.getElementById("botonMacbook").onclick = macbook;
+function samsung(){
+    comprar("samsung");
+}
+function macbook(){
+    comprar("macbook");
 }
