@@ -15,6 +15,7 @@ function verificar(){
     let arguments = new Array();
     pass = document.getElementById("contra").value;
     repeat = document.getElementById("contra2").value;
+   
     if(pass != repeat){
         coincide = false;
         arguments.push("las contraseñas no coinciden");
@@ -33,9 +34,7 @@ function verificar(){
     
     
     comment(arguments);
-    if(noArgs){
-        verificacionFinal();
-    }
+    
 }
 //revisar...
 function verificacionFinal(){
@@ -69,7 +68,7 @@ function comment(args){
         if(i == args.length-1){
             toPrint[i] = args[i];
         }else{
-           toPrint[i] = args[i] + "/"; 
+           toPrint[i] = args[i] + " / "; 
         }
         
     }

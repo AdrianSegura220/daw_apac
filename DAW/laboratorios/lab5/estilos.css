@@ -5,3 +5,31 @@ header
     font-family: impact;
     text-align: center;
 }
+
+#campoDeDatos
+{
+    font-family: arial;
+    font-size: 20px;
+    margin: 100;
+    text-align: center;
+}
+#aqui
+{
+    text-align: center;
+    font-family: impact;
+    color: red;
+}
+#contra
+{
+    width: 500px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+#contra2
+{
+    width: 500px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+}
