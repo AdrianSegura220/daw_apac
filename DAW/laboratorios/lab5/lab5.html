@@ -4,9 +4,15 @@
     <head>
         <title>
         </title>
+        <!-- recordemos que el link al css va antes de cerrar el header y el js va antes de finalizar el tag de html -->
+        <link rel = "stylesheet" type = "text/css" href = "estilos.css">
     </head>
     <body>
-        
+        <header>LABORATORIO 5: VALIDADOR DE CONTRASEÑAS</header>
+        <input type = "password" oninput="verificar()" id="contra">
+        <input type = "password" id="contra2" oninput="verificar()">
+        <br>
+        <div id = "aqui"></div>
     </body>
-
+    <script type="text/javascript" src = "logic.js"></script>
 </html>
