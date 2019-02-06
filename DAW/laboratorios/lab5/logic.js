@@ -19,6 +19,8 @@ function verificar(){
     if(pass != repeat){
         coincide = false;
         arguments.push("las contraseñas no coinciden");
+    }else{
+        coincide = true;
     }
     if(pass.length < 8){
         corta = true;
@@ -32,7 +34,11 @@ function verificar(){
         noArgs = false;
     }
     
-    
+    if(noArgs){
+        document.getElementById("campoDeDatos").style.backgroundColor = "green";
+    }else{
+        document.getElementById("campoDeDatos").style.backgroundColor = "white";
+    }
     comment(arguments);
     
 }

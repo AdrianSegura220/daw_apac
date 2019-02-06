@@ -8,9 +8,10 @@ header
 
 #campoDeDatos
 {
+    padding: 10px;
     font-family: arial;
     font-size: 20px;
-    margin: 100;
+    margin: 100 auto;
     text-align: center;
 }
 #aqui
