@@ -158,6 +158,17 @@ function comprar(articulo){
 document.getElementById("botonSamsung").onclick = samsung;
 document.getElementById("botonMacbook").onclick = macbook;
 document.getElementById("botonEar").onclick = ear;
+document.getElementById("calcularT").onclick = areaT;
+
+function areaT(){
+    let base = document.getElementById("base").value;
+    let altura = document.getElementById("altura").value;
+    let nombre = document.getElementById("nombre").value;
+    
+            let area = (base*altura)/2;
+            alert(nombre+", el área de tu triángulo es = "+area);
+}
+
 function samsung(){
     comprar("samsung");
     
