@@ -263,6 +263,17 @@ function imprimirListaFinal(){
     }
     
 }
+
+
+function f(){
+    let a,b,c;
+    a = true;
+    console.log(a);
+    a = 10; 
+    console.log(a);
+    a = "hello";
+    console.log(a);
+}
 document.getElementById("desgloce").innerHTML = 'No tienes ningún elemento en lista...';
 document.getElementById("desgloce").style.backgroundColor = "white";
 document.getElementById("desgloce").style.borderColor = "white";

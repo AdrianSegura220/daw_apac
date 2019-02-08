@@ -1,0 +1,55 @@
+#tutorial1
+{
+    margin: 0 auto;
+    text-align: center;
+    position: sticky;
+    font-size: 10vw;
+    font-family: sans-serif;
+    top: 10px;
+    border: 3px solid green; 
+    background-color: aliceblue;
+    font-variant: small-caps;
+}
+#textZone
+{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+    font-family: sans-serif;
+    line-height: 20px;
+    
+}
+img
+{
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+img:hover
+{
+   opacity: 0.2;
+}
+
+.center
+{
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+   
+}
+#hide
+{
+    color:black;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#container
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
