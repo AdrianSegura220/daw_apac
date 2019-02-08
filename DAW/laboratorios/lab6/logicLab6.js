@@ -1,10 +1,9 @@
 function changeLetter(){
-    if(cont % 2 != 0){
+    cont++;
+    if(cont % 2 == 0){
         document.getElementById("tutorial1").style.backgroundColor = "lightyellow";
-        cont++;
     }else{
-        document.getElementById("tutorial1").style.backgroundColor = "lightblue";
-        cont++;
+        document.getElementById("tutorial1").style.backgroundColor = "aliceblue";
     }
     
 }
@@ -36,8 +35,9 @@ function init(){
 }
 let cont3 = 1;
 let cont2 = 1;
-let cont = 0;
+let cont = 1;
 document.getElementById("esconder").onclick = hideElement;
 document.getElementById("tutorial1").onmouseover = changeLetter;
+document.getElementById("tutorial1").onmouseout = changeLetter;
 document.getElementById("masInfo").onmouseover = masInfo;
 document.getElementById("masInfo").onmouseout = masInfo;
