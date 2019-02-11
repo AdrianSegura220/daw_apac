@@ -76,4 +76,4 @@ document.getElementById("masInfo").onmouseover = masInfo;
 document.getElementById("masInfo").onmouseout = masInfo;
 document.getElementById("letterChange").onmouseover = cambioLetra;
 document.getElementById("letterChange").onmouseout = cambioLetra;
-setInterval(afk,5000);
+setInterval(afk,30000);
