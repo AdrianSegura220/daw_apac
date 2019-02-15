@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{SERVER_PORT} ^80$
+RewriteRule ^micarpeta/registro/$ https://aslorente.com/micarpeta/registro/ [R,L]
