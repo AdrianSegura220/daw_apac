@@ -1,0 +1,26 @@
+.nav-wrapper
+{
+    padding-left: 15px;
+    margin: auto;
+    padding-right: 15px;
+    min-height: 100px;
+    background-color: rgba(88,144,255);
+    padding-top: 20px;
+}
+
+#loguito
+{
+    width: 20%;
+    height: 20%;
+}
+
+.brand-logo
+{
+    text-align: center;
+}
+
+#seQueda
+{
+    position: sticky;
+    top: 0;
+}
