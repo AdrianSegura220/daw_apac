@@ -1,0 +1,22 @@
+¿Qué muestra la instrucción?
+-	Información sobre la tabla Materiales en este caso, muestra sus diferentes columnas y respectivos campos. 
+
+¿Qué efecto tuvo esta acción?
+-	Despliega una ventana nueva con la misma conexión.
+-	Poder ejecutar varios comandos diferentes sin hacerlos todos en la misma pestaña.
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+-       Esto sirve para poder ejecutar diversos comandos sin modificar los de tu ventana actual, siendo esto en la misma conexión.
+
+¿Qué relación tienen con las tablas de la base de datos?
+-       Tienen los mismos datos, pero están separados por comas.
+
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+-	La separación de los datos va con ‘,’ y eso se especifica en el BULK INSERT , al igual que ‘\n’.
+Después de la ejecución del comando, vuelve a revisar el contenido de la tabla materiales mediante el uso de una consulta. 
+
+SELECT  * FROM Materiales
+
+¿Qué sucedió?
+-	Mostró todos los registros de la tabla Materiales
+
