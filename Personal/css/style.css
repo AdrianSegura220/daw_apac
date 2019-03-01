@@ -1,0 +1,158 @@
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+**/
+/*GENERAL--------------------------------------------------------------------------------------*/
+.bordeVisible{
+    border: solid;
+}
+.alinearV{
+    vertical-align: middle !important;
+}
+.centrarTitulo{
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+}
+/*      Colores principales de la página.
+* - Van a cambiar cuando nos den el rgba exacto
+* - si no tiene -text es para fondos
+* - si tiene -text es para fonts
+* - si tiene -n (donde n es un número) es para lo translúcido. Entre mayor este num, menos translúcido
+*/
+.color1{
+  background-color: rgba(38, 153, 251, 1);
+}
+.color1-5{
+  background-color: rgba(38, 153, 251, 0.5);
+}
+.color1-text{
+  color: rgba(38, 153, 251, 1);
+}
+
+.color2{
+  background-color: rgba(127, 196, 253, 1);
+}
+.color2-text{
+  color: rgba(127, 196, 253, 1);
+}
+
+.color3{
+  background-color: rgba(251, 159, 38, 1);
+}
+.color3-text{
+  color: rgba(251, 159, 38, 1);
+}
+/*      Containers
+* - Los puedes usar en cualquier página.
+* - Recuerda poner en qué pagina lo diseñaste para que puedan ver un ejemplo
+*/
+
+/*      Inputs
+* - Los puedes usar en cualquier página.
+* - Recuerda poner en qué pagina lo diseñaste para que puedan ver un ejemplo
+*/
+.restricted-size{
+  /*Limito el tamaño de los inputs para que no sean enormes*/
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*MODALS---------------------------------------------------------------------------------------*/
+.modal > .modal-content > .title{
+  /*Título del modal: Sólo funciona cuando está adentro del content*/
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/*NAV------------------------------------------------------------------------------------------*/
+/*FOOTER---------------------------------------------------------------------------------------*/
+.footer_logoContainer{
+  padding: 1rem;
+}
+/*INDEX----------------------------------------------------------------------------------------*/
+.section .bigger-section{
+/*
+* Ya existía section en materialize pero lo necesito un poco más grande.
+* Ejemplo en index
+*/
+  min-height: 5rem;
+}
+/*npi------------------------------------------------------------------------------------------*/
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+/*Colores usados para crear  Registro */
+.azulFondoCLaro{
+  background-color: #7FC4FD ;
+}
+.azulFondoCuadroTexto{
+  background-color: #F6F6F6
+}
+.azulFondoOscuro{
+  background-color:#2699FB;
+}
+.textoBlanco{
+  color: #ffffff ;
+}
+
+/*tablas de registro_usuario*/
+.row .col.t1 {
+  border-style: solid ;
+  border-color: #2699FB ;
+  width: 50%;
+  border-radius: 25px;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.nav {
+  background-color: #2699FB  !important;;
+}
+
+/*crearTorneo------------------------------------------------------------------------------------------*/
+#fondoDivCrearTorneo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(241,249,255);
+    min-height:525px;
+    min-width: 550px;
+    max-height: 530px;
+    max-width: 850px;
+}
+#h1CT{
+
+    font-family: arial;
+
+}
+#poster_crearT{
+    display: flex;
+    align-items: center;
+}
+#crearT_form{
+    padding: 20px;
+}
+
+.centrarFormulario{
+    position: relative;
+}
+.crearT_label_form>label{
+    font-family: roboto;
+    font-size: 19px;
+    margin-bottom: 20px;
+
+}
+.crearT_label_form>select{
+
+
+    margin:20px;
+
+}

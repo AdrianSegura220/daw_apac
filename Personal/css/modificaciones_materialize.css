@@ -1,0 +1,123 @@
+/*MODIFICACIONES A MATERIALIZE-----------------------------------------------------------------*/
+/*
+* Formato al container de los modals
+*/
+.modal{
+  border-radius: 10px;
+}
+
+/*
+* Cambiar a los botones para que sean un poco más circulares
+*/
+.btn{
+  border-radius: 10px;
+}
+
+/*
+* Cambiar de colores los inputs de texto
+*/
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid rgba(38, 153, 251, 1);
+  -webkit-box-shadow: 0 1px 0 0 rgba(38, 153, 251, 1);
+          box-shadow: 0 1px 0 0 rgba(38, 153, 251, 1);
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: rgba(38, 153, 251, 1);
+}
+
+.input-field .prefix.active {
+  color: rgba(38, 153, 251, 1);
+}
+/*
+* Para inputs blancos
+*/
+.input-blanco > input:not([type]):focus:not([readonly]),
+.input-blanco > input[type=text]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=password]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=email]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=url]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=time]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=date]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=datetime]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=tel]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=number]:not(.browser-default):focus:not([readonly]),
+.input-blanco > input[type=search]:not(.browser-default):focus:not([readonly]),
+.input-blanco > textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 1);
+          box-shadow: 0 1px 0 0 rgba(255, 255, 255, 1);
+}
+.input-blanco > input:not([type]):focus:not([readonly]) + label,
+.input-blanco > input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+.input-blanco > textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: rgba(38, 153, 251, 1);
+}
+
+.input-blanco > .input-field .prefix.active {
+  color: rgba(38, 153, 251, 1);
+}
+
+
+/*Checar con Gil
+.input-field > label {
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  cursor: text;
+  -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
+  transition: color .2s ease-out, -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out, color .2s ease-out;
+  transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  text-align: left;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+}
+
+.input-field > label:not(.label-icon).active {
+  -webkit-transform: translateY(-30px) scale(0.8);
+          transform: translateY(-30px) scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+*/
