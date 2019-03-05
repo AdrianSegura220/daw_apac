@@ -1,0 +1,62 @@
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. 
+¿Cuál es? ¿A qué se debe? 
+
+ - La inconsistencia es que tiene una tupla que no tiene contenido en su descripción, de igual manera
+se repite la clave con otro artículo previamente registrado. Esto se debe a que fue introducida por nosotros
+manualmente de manera directa.
+
+
+¿Qué ocurrió? 
+ - No permitió que añadiera la tupla; ya que, la clave está duplicada y la constraint impide eso, ya que se define
+como una llave primaria
+
+Verifica si la tabla de materiales tiene definido algún constraint (restricción): 
+  sp_helpconstraint materiales 
+
+¿Qué información muestra esta consulta? 
+
+ - Muestra que la tabla materiales tiene una contraint de llave primaria para clave y se llama llaveMateriales
+
+
+¿Qué sentencias utilizaste para definir las llaves primarias? 
+
+ - Utilicé: ALTER TABLE Entregan add constraint llaveEntregan PRIMARY KEY (Clave,Fecha,Numero) 
+
+¿Qué particularidad observas en los valores para clave, rfc y numero? 
+
+ - Que son valores inconsistentes, que no tienen ningún valor representativo.
+
+¿Cómo responde el sistema a la inserción de este registro? 
+ - Permite el registro de dichos valores.
+
+¿Qué significa el mensaje que emite el sistema? 
+
+ - significa que tiene que tener relación con la clave de materiales, ya que se le añadión una llave foránea, por
+lo tanto no podemos añadir el nuevo registro
+
+
+¿Qué significado tiene la sentencia anterior? 
+
+ - agrega una llave foránea clave de la tabla materiales
+
+Lista el registro que acabas de crear. 
+¿Qué uso se le está dando a GETDATE()? 
+
+ - Pone la fecha en el momento en el cual se hace el registro
+
+¿Tiene sentido el valor del campo de cantidad? 
+
+ - No, no se puede hacer una entrega vacía
+
+¿Cómo responde el sistema? 
+
+ - No lo permite debido al constraint añadido (check) que checa que cantidad sea mayor a cero
+
+¿Qué significa el mensaje? 
+
+ - Que no puede agregar , ya que se genera conflicto por el constraint, en este caso porque cantidad es igual a cero
+
+Integridad referencial se refiere a como las tuplas de una tabla en una base de datos tienen unicidad y
+tienen un diseño correcto en cuanto a sus llaves primarias y foráneas, esto haciendo muy complicado 
+que los valores se repitan o sean idénticos, que es lo que no se busca, se busca diferenciarlos de manera
+correcta.
