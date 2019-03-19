@@ -4,7 +4,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "nombre de base de datos"
+        $dbname = "lab19";
         $con = mysqli_connect($servername, $username, $password, $dbname);
         
         //check connection
@@ -34,13 +34,13 @@
             echo "<tr>";
         }
     }
-    function cargarArreglo(){
+    function cargarArreglo($result){
         $arreglo = array();
-         while($row = mysqli_fetch_assoc($result)){
+         while($row = mysqli_fetch_array($result, MYSQLI_BOTH)){
              //push de nombres de base de datos a arreglo
-            array_push(arreglo,$row["nombre"]);
-             var_dump($arreglo);
+            array_push($arreglo,$row["nombre"]);
+             
         }
+               return $arreglo;
     }
-    cargarArreglo();
 ?>

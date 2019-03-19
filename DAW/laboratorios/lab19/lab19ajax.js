@@ -20,7 +20,7 @@ function sendRequest(){
    if(request!=null)
    {
      var userInput = document.getElementById('userInput');
-     var url='controller.php?pattern='+userInput.value;
+     var url='lab19controller.php?pattern='+userInput.value;
     //se abre la conexión en el url solicitado
      request.open('GET',url,true);
     //este es una especie de listener

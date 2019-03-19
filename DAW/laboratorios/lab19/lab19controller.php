@@ -1,6 +1,9 @@
 <?php
+require_once 'util.php';
 $pattern=strtolower($_GET['pattern']);
-$words=array("Distributed applications","AJAX","Java Server Pages", "Web services","Data bases","JavaScript","Networking","PHP");
+$result = getItems();
+$words = cargarArreglo($result);
+
 $response="";
 $size=0;
 for($i=0; $i<count($words); $i++)
