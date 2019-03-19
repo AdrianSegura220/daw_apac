@@ -58,8 +58,19 @@ group by M.Descripcion
 select P.RazonSocial, sum(E.Cantidad)/count(E.RFC) as 'Promedio de cantidad entregada'
 from Entregan as E, Proveedores as P, Entregan as En, Proveedores as Pr
 where E.RFC = P.RFC
-group by P.RazonSocial, 'Promedio de cantidad entregada'
-having sum(E.Cantidad)/count(E.RFC) > sum(En.Cantidad)/count(En.RFC) and Pr.RFC = 'VAGO780901' 
+group by P.RazonSocial
+having sum(E.Cantidad)/count(E.RFC) > (select sum(E.Cantidad)/count(E.RFC) as 'Promedio de cantidad entregada'
+from Entregan as E, Proveedores as P, Entregan as En, Proveedores as Pr
+where E.RFC = P.RFC and P.RFC = 'VAGO780901')
+
+select P.RFC, P.RazonSocial
+from Proveedores as P, Entregan as E, Proyectos as Pr
+where year(E.Fecha) = 2000 and Pr.Denominacion = 'Infonavit Durango' and P.RFC = E.RFC and Pr.Numero = E.Numero
+group by P.RFC, P.RazonSocial
+having sum(E.Cantidad) > (select sum(E.Cantidad) from Entregan as E, Proyectos as Pr where year(E.Fecha) = 2001 and Pr.Numero = E.Numero and Pr.Denominacion = 'Infonavit Durango')
+
+
+
 
 select * from Entregan
 
