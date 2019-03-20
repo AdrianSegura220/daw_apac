@@ -1,0 +1,24 @@
+¿Qué hace el primer bloque del código (bloque del IF)? 
+ - Revisa si existe el procesdimiento creaMaterial en los metadatos sysobjects y si es así, elimina el procedimiento
+creaMaterial
+¿Para qué sirve la instrucción GO? 
+ - Por ser un lenguaje interpretado, permite que primero se ejecute la sentencia de arriba de GO, antes de continuar
+con el resto del código, esto para evitar inconsistencias
+¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica?
+ - Este procedimiento recibe como parámetro primero la clave, segundo una descripcion, después un costo y finalmente
+un impuesto. Como en nuestros laboratorios previos no utilizabamos impuesto, lo quité del stored procedure.
+
+Ejecútalo con la siguiente instrucción: 
+
+EXECUTE queryMaterial 'Lad',20 
+
+Explica en tu reporte qué recibe como parámetro este procedimiento y qué hace:
+ - Este stored procedure recibe como parámetro un patrón que tiene que ver con la descripción. También recibe un
+costo, el cual es revisado y si hay alguno con costo más alto y se cumple en algún registro con el patrón, entonces
+se muestran las tuplas correspondientes.
+
+¿Qué ventajas tienen el utilizar Stored Procedures en una aplicación cliente-servidor? 
+ - Que todas las consultas o procedimientos ya están definidos y no pueden salirse de acciones pre-definidas.
+¿Qué ventajas tiene utilizar SP en un proyecto?
+ - Que debido a la gran cantidad de posibles consultas necesarias etc. es bueno tener automatizadas dichas consultas
+y procedimientos.
